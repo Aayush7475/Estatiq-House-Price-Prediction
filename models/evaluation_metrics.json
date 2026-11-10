@@ -1,0 +1,18 @@
+{
+    "linear_regression": {
+        "mae": 3278219.31,
+        "mse": 27551992159673.79,
+        "rmse": 5248999.16,
+        "r2": 0.8179,
+        "train_r2": 0.8347
+    },
+    "random_forest": {
+        "mae": 2441376.0,
+        "mse": 18846544886000.0,
+        "rmse": 4341260.75,
+        "r2": 0.8754,
+        "train_r2": 0.9815
+    },
+    "best_model": "random_forest",
+    "best_model_r2": 0.8754
+}

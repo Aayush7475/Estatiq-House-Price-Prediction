@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #101827;
+  --foreground: #F1F5F9;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  overflow-x: hidden;
+}
+
+.serif-font {
+  font-family: 'Playfair Display', Georgia, serif;
+}
+
+/* Gold Gradient Utilities */
+.gold-gradient-text {
+  background: linear-gradient(135deg, #F5E3C3 0%, #D6AD60 50%, #B8860B 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gold-gradient-bg {
+  background: linear-gradient(135deg, #E5C07B 0%, #D6AD60 50%, #B8860B 100%);
+}
+
+.gold-gradient-border {
+  border-image: linear-gradient(135deg, #D6AD60, rgba(214, 173, 96, 0.2)) 1;
+}
+
+/* Glassmorphism Surface */
+.glass-surface {
+  background: rgba(30, 41, 59, 0.7);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.glass-surface:hover {
+  border-color: rgba(214, 173, 96, 0.3);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #0B1120;
+}
+::-webkit-scrollbar-thumb {
+  background: #1E293B;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #D6AD60;
+}
+
